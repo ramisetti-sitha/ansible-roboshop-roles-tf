@@ -1,0 +1,17 @@
+plugin: amazon.aws.aws_ec2
+region: 
+ - us-east-1
+hostnames: 
+ - private-ip-address
+filters:
+ instance-state-name: running
+ tag:Name: frontend-dev
+compose:
+ ansible-hosts: private-ip-address
+keyed_groups:
+ - separator: ''
+   key: tags.Name | regex_replace('-.*$', '')
+# keyed_groups:
+# - separator: ''
+#   # name of the group is frontend
+#   key: tags.Name | regex_replace('-.*$', '')

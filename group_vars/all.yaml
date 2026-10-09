@@ -1,0 +1,11 @@
+ansible_user: ec2-user
+ansible_password: DevOps321
+MONGODB_HOST: mongodb-dev.devdaws.site
+CATALOGUE_HOST: catalogue-dev.devdaws.site
+REDIS_HOST: redis-dev.devdaws.site
+USER_HOST: user-dev.devdaws.site
+CART_HOST: cart-dev.devdaws.site
+MYSQL_HOST: mysql-dev.devdaws.site
+SHIPPING_HOST: shipping-dev.devdaws.site
+RABBITMQ_HOST: rabbitmq-dev.devdaws.site
+PAYMENT_HOST: payment-dev.devdaws.site
